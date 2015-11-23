@@ -1,0 +1,173 @@
+Benedicts-MacBook-Pro:results benedictnagle-rose$ ruby main.rb
+main.rb:4:in `<main>': uninitialized constant Yoda_speak (NameError)
+Benedicts-MacBook-Pro:results benedictnagle-rose$ ruby main.rb
+201
+Benedicts-MacBook-Pro:results benedictnagle-rose$ ruby main.rb
+201
+Benedicts-MacBook-Pro:results benedictnagle-rose$ cd ..
+Benedicts-MacBook-Pro:api_examples benedictnagle-rose$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	results/
+
+nothing added to commit but untracked files present (use "git add" to track)
+Benedicts-MacBook-Pro:api_examples benedictnagle-rose$ git add .
+Benedicts-MacBook-Pro:api_examples benedictnagle-rose$ git commit
+[master 8d252da] Update to api_examples
+ 9 files changed, 109 insertions(+)
+ create mode 100644 results/data.txt
+ create mode 100644 results/main.rb
+ create mode 100644 results/main_person.rb
+ create mode 100644 results/main_skinder.rb
+ create mode 100644 results/main_yoda_speak.rb
+ create mode 100644 results/person.rb
+ create mode 100644 results/reader_main.rb
+ create mode 100644 results/skinder.rb
+ create mode 100644 results/yoda_speak.rb
+Benedicts-MacBook-Pro:api_examples benedictnagle-rose$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (12/12), 2.29 KiB | 0 bytes/s, done.
+Total 12 (delta 0), reused 0 (delta 0)
+To https://github.com/BeeNag/api_examples.git
+   20b789b..8d252da  master -> master
+Benedicts-MacBook-Pro:api_examples benedictnagle-rose$ cd results
+Benedicts-MacBook-Pro:results benedictnagle-rose$ ruby main.rb
+201
+Benedicts-MacBook-Pro:results benedictnagle-rose$ cd ..
+Benedicts-MacBook-Pro:api_examples benedictnagle-rose$ cd ..
+Benedicts-MacBook-Pro:dev benedictnagle-rose$ echo "# monte_carlo_problem" >> README.md
+Benedicts-MacBook-Pro:dev benedictnagle-rose$ git init
+Initialized empty Git repository in /Users/benedictnagle-rose/dev/.git/
+Benedicts-MacBook-Pro:dev benedictnagle-rose$ git add README.md
+Benedicts-MacBook-Pro:dev benedictnagle-rose$ git commit -m "first commit"
+[master (root-commit) 9eee135] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+Benedicts-MacBook-Pro:dev benedictnagle-rose$ git remote add origin https://github.com/TIY-1511/monte_carlo_problem.git
+Benedicts-MacBook-Pro:dev benedictnagle-rose$ git push -u origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 233 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/TIY-1511/monte_carlo_problem.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+Benedicts-MacBook-Pro:dev benedictnagle-rose$ cd monte_carlo_problem
+-bash: cd: monte_carlo_problem: No such file or directory
+Benedicts-MacBook-Pro:dev benedictnagle-rose$ ls
+README.md		classes			music-site
+api_examples		classes_homework	strings
+arrays_and_hashes	methods			week-01
+Benedicts-MacBook-Pro:dev benedictnagle-rose$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	api_examples/
+	arrays_and_hashes/
+	classes/
+	classes_homework/
+	methods/
+	music-site/
+	strings/
+	week-01/
+
+nothing added to commit but untracked files present (use "git add" to track)
+Benedicts-MacBook-Pro:dev benedictnagle-rose$ ls -a
+.			api_examples		music-site
+..			arrays_and_hashes	strings
+.DS_Store		classes			week-01
+.git			classes_homework
+README.md		methods
+Benedicts-MacBook-Pro:dev benedictnagle-rose$ mkdir monte_carlo_problem
+Benedicts-MacBook-Pro:dev benedictnagle-rose$ mv .git monte_carlo_problem/
+Benedicts-MacBook-Pro:dev benedictnagle-rose$ cd m
+-bash: cd: m: No such file or directory
+Benedicts-MacBook-Pro:dev benedictnagle-rose$ cd monte_carlo_problem/
+Benedicts-MacBook-Pro:monte_carlo_problem benedictnagle-rose$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Benedicts-MacBook-Pro:monte_carlo_problem benedictnagle-rose$ mv ../README.md .
+Benedicts-MacBook-Pro:monte_carlo_problem benedictnagle-rose$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+Benedicts-MacBook-Pro:monte_carlo_problem benedictnagle-rose$ touch main.rb
+Benedicts-MacBook-Pro:monte_carlo_problem benedictnagle-rose$ ruby main.rb
+Hello
+Benedicts-MacBook-Pro:monte_carlo_problem benedictnagle-rose$ ruby main.rb
+jack
+joker
+joker
+Benedicts-MacBook-Pro:monte_carlo_problem benedictnagle-rose$ ruby main.rb
+jack
+joker
+joker
+main.rb:9:in `<main>': private method `rand' called for [:jack, :joker, :joker]:Array (NoMethodError)
+Benedicts-MacBook-Pro:monte_carlo_problem benedictnagle-rose$ irb
+irb(main):001:0> a = [1,6,2]
+=> [1, 6, 2]
+irb(main):002:0> a.rand
+NoMethodError: private method `rand' called for [1, 6, 2]:Array
+	from (irb):2
+	from /Users/benedictnagle-rose/.rbenv/versions/2.2.3/bin/irb:11:in `<main>'
+irb(main):003:0> a.random
+NoMethodError: undefined method `random' for [1, 6, 2]:Array
+	from (irb):3
+	from /Users/benedictnagle-rose/.rbenv/versions/2.2.3/bin/irb:11:in `<main>'
+irb(main):004:0> a.shuffle
+=> [6, 2, 1]
+irb(main):005:0> a
+=> [1, 6, 2]
+irb(main):006:0> a.shuffle!
+=> [2, 1, 6]
+irb(main):007:0> a
+=> [2, 1, 6]
+irb(main):008:0> rand(3)
+=> 2
+irb(main):009:0> a
+=> [2, 1, 6]
+irb(main):010:0> a.delete_at
+ArgumentError: wrong number of arguments (0 for 1)
+	from (irb):10:in `delete_at'
+	from (irb):10
+	from /Users/benedictnagle-rose/.rbenv/versions/2.2.3/bin/irb:11:in `<main>'
+irb(main):011:0> a.delete_at 1
+=> 1
+irb(main):012:0> a
+=> [2, 6]
+irb(main):013:0> exit
+Benedicts-MacBook-Pro:monte_carlo_problem benedictnagle-rose$ 
